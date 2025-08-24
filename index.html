@@ -77,7 +77,7 @@
         const card = document.createElement("div");
         card.classList.add("card");
         card.dataset.emoji = emoji;
-        card.innerHTML = '<img src="images/back_fac.png" style="width:50px; height:50px;">';
+        card.innerHTML = '<img src="images/back_fac.png" style="width:80px; height:80px;">';
         card.addEventListener("click", flipCard);
         board.appendChild(card);
       });
@@ -111,7 +111,7 @@
           firstCard.classList.remove("flipped");
           secondCard.classList.remove("flipped");
           [firstCard, secondCard].forEach(card => {
-  card.innerHTML = '<img src="images/back.png" style="width:50px; height:50px;">';
+  card.innerHTML = '<img src="images/back_fac.png" style="width:80px; height:80px;">';
 });
           resetBoard();
         }, 1000);
